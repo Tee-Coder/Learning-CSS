@@ -70,8 +70,26 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /*Disable the underline*/
+    display: inline-block;
+    padding: 16px 32ox
 }
+    
+    
+    nav ul li a:hover {
+        background-color: rgb(50,50,50);
+        color: royalblue;
+        
+
+
+
+
+
+
+
+
+    }
+
 
 p
 {
