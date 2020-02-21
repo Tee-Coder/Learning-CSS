@@ -45,7 +45,7 @@ height: 0;
 .OVERFLOW-HIDDEN
 {
     overflow: hidden;
-    height: 35px;
+    height: 100px;
 }
 .OVERFLOW-VISIBLE
 {
@@ -65,7 +65,7 @@ nav{
     background-color: salmon;
     margin: 16px auto; /*this means we want 16 px for top,the left and right is auto */
     Position: relative;
-    top: 50px;
+    bottom: 10px;
 }
 
 nav ul {
@@ -91,12 +91,6 @@ nav ul li a {
         
 
 
-
-
-
-
-
-
     }
 
 
@@ -108,6 +102,8 @@ p
     color:rgb(33, 33, 33, 33);
    background-color: #eeeeee;
    text-align: center;
+   margin-bottom: 16px;
+   
 
 }
 
@@ -118,4 +114,42 @@ article {
     margin-right: auto;
     padding: 16px;
 
+}
+
+body
+{
+    background-image:url(../IMG/flowers.png);
+    background-size:cover;/*cover the whole element*/
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+
+    
+}
+
+#float-practice
+{
+    float: right;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+}
+/*margin:0 16px 16px 0(top,right,bottom,left);*/
+
+
+#z-index-practice
+{
+    display:block;
+    position: absolute;
+    
+    
+    
+    
+    
+   
+    
+   
+    
+    /*visual layering! Think Photoshop...which element should appear "on-top"*/
 }
