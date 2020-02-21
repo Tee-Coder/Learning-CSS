@@ -1,3 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
@@ -57,6 +64,8 @@ nav{
     max-width:500px;
     background-color: salmon;
     margin: 16px auto; /*this means we want 16 px for top,the left and right is auto */
+    Position: relative;
+    top: 50px;
 }
 
 nav ul {
