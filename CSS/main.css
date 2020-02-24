@@ -1,4 +1,63 @@
+@font-face
+{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf');
+
+    src: url('../Fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.woff')format('woff'),
+ 
+    url('../Fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf')format('truetype'),
+
+    url('../Fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Bold.woff')format('woff2');
+
+    font-weight: normal;
+    font-style: normal;
+
+
+
+}
+
+
+
+@font-face
+{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf');
+
+    src: url('../Fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf')format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face
+{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf');
+
+    src: url('../Fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face
+{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf');
+
+    src: url('../Fonts/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf')format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+/*Basic browser reset*/
+
 *{
+    box-sizing: border-box;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -118,7 +177,7 @@ article {
 
 body
 {
-    background-image:url(../IMG/flowers.png);
+    background-image:url(../IMG/whiterose.jpg);
     background-size:cover;/*cover the whole element*/
     background-repeat: no-repeat;
     background-position:center;
@@ -142,14 +201,49 @@ body
 {
     display:block;
     position: absolute;
-    
-    
-    
-    
-    
-   
-    
-   
-    
     /*visual layering! Think Photoshop...which element should appear "on-top"*/
+}
+
+#background-bullets,
+#image-bullets
+{
+    list-style: none;
+    margin: 16px auto;
+    padding: 16px 16px 16px 64px
+}
+
+#background-bullets li
+{
+    background-image: url("../IMG/coin.jpg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: top left;
+    padding:8px 8px 8px 64px;
+}
+
+#image-bullets li {
+    position: relative;
+    padding: 8px 8px 8px 64px;
+}
+#image-bullets li img
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+
+}
+
+code
+{
+    white-space: pre;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    color: hotpink;
+}
+
+h1,h2,h4,h5,h6{
+    font-size: 50px;
+    font-family: "Great Vibes", Georgia, Serif;
+    padding-top: 16px;
 }
