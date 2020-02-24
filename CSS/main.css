@@ -239,7 +239,7 @@ code
 {
     white-space: pre;
     font-family: "JetBrains Mono", Consolas, monospace;
-    color: hotpink;
+    color: blue;
 }
 
 h1,h2,h4,h5,h6{
@@ -247,3 +247,30 @@ h1,h2,h4,h5,h6{
     font-family: "Great Vibes", Georgia, Serif;
     padding-top: 16px;
 }
+
+h2{
+    font-family: 'Great vibes', 'Comic sans', 'cursive';
+    font-size: 32px;
+    color:green;
+}
+#social-media-links {
+    list-style: none;
+    text-align: center;
+}
+
+#social-media-link >li /*Direct child selector ">". The LI must be directly inside the element with the "social-media-links" id in this case*/
+{
+display: inline-block;
+margin: 8px; /*Observe! Margin collapse- the largest, when interacting , wins!*/
+}
+#social-media-links .fab
+{
+color: rgba(50,50, 50,1); /*RGBA -the "a" stands for ALPHA channel.*/
+font-size: 32px;
+}
+
+#social-media-links a:hover .fab{ /*Pseudo-selector with nesting.*/
+
+    color:rgba(50,50, 50,0.5);
+}
+
