@@ -248,6 +248,12 @@ h1,h2,h4,h5,h6{
     padding-top: 16px;
 }
 
+h1{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
 h2{
     font-family: 'Great vibes', 'Comic sans', 'cursive';
     font-size: 32px;
@@ -272,5 +278,24 @@ font-size: 32px;
 #social-media-links a:hover .fab{ /*Pseudo-selector with nesting.*/
 
     color:rgba(50,50, 50,0.5);
+}
+
+@media screen and (min-width:1024px)
+
+{
+body {
+    background:red;
+}
+
+    h1{
+        font-size: 54px;
+    }
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
 }
 
