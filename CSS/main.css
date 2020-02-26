@@ -123,9 +123,16 @@ nav{
     max-width:500px;
     background-color: salmon;
     margin: 16px auto; /*this means we want 16 px for top,the left and right is auto */
-    Position: relative;
-    bottom: 10px;
+    
+    Position: fixed;
+    margin: 0 auto;
+    bottom: auto;
+    left:0;
+    top:0;
+    right: 0;
+    z-index: 4;
 }
+
 
 nav ul {
     text-align: center;
@@ -303,6 +310,35 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,28,121,1) 35%, rgba
     top: 100%;
     right: 0;
 }
+
+.video-section
+{
+   position: relative;
+   overflow: hidden;
+}
+
+.video-section >*
+{
+    position: relative;
+    z-index:3;
+}
+
+.video-section p{
+    background: none;
+}
+
+.video-section video{
+    position: absolute;
+   /* top:0;*/
+    right: 0;
+   /* left: 0;*/
+    right: 0;
+    bottom: 0;
+    width: 150%;
+    height: auto;
+    z-index: 1;
+}
+
 #social-media-link >li /*Direct child selector ">". The LI must be directly inside the element with the "social-media-links" id in this case*/
 {
 display: inline-block;
