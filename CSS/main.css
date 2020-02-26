@@ -52,6 +52,27 @@
 
 }
 
+@keyframes my-animation
+{
+    0%
+    {/*We desire to define at which point in an animation changes occur!*/
+        transform: scale(1);/*what should change at this point in the animation???*/
+    
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+    75%
+    {
+        transform: scale(1.5);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
 
 
 /*Basic browser reset*/
@@ -356,7 +377,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,28,121,1) 35%, rgba
     border: 6px dotted indigo;
     
 }
+.transition-transform button:nth-child(2)
+/* Need more help contatct https://css-tricks.com/useful-nth-child-recipes */
+ /*we can specify children!This can save us from ID- or CLASS -itus!Only use IDs and classes where yiu need.*/
+{
+    background-color: black;
+    color: lightblue;
+}
 
+.transition-transform button :nth-child(3)
+{
+    color:lightpink;
+    background-color: darkgoldenrod;
+}
 
 /* Tranform/hover example:*/
 .transition-transform div{
@@ -378,8 +411,27 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,28,121,1) 35%, rgba
         translate( 100px, -50px ) /*Move based on X and Y coordinates.*/
         rotate( 35deg )/*Rotation in degrees*/
         scale( 2 );/*Resize the element (1=100%, 0=o%; 2=200% etc)*/
-       
+
+        /*keyframe testing*/
 }
+
+
+#keyframe-test{
+    width: 100px;
+    height: 100px;
+    background-color: firebrick;
+    margin: 64PX;
+    border-radius: 100px;
+    /*LETS ANIMATE*/
+    animation-name: my-animation;/*call it by name*/
+    animation-duration: 2s;/*how long should the animation be*/
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+       
+
 .video-section
 {
    position: relative;
