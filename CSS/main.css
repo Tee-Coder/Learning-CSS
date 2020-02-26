@@ -52,7 +52,7 @@
 
 }
 
-@keyframes my-animation
+@keyframes my-animation /*pay attention to your name! You use this to call the animation whenever/wherever you need*/
 {
     0%
     {/*We desire to define at which point in an animation changes occur!*/
