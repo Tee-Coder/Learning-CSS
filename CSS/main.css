@@ -311,6 +311,75 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,28,121,1) 35%, rgba
     right: 0;
 }
 
+
+.video-section::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100;
+    background: rgba(255, 255, 255, 0.40);
+    z-index:2;
+}
+/*transform buttons*/
+
+.transition-transform button
+{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: gray;
+    background: lavenderblush;
+    padding: 8px 16px;
+    border: 3px solid black;
+    margin: 32px;
+    cursor: pointer; /*mIckey mouse hand !*/
+    transition: 1s linear border, 
+    0.3s ease-in padding,
+    0.5s ease-in background-color,
+    2s ease color,
+    4s ease font-size;
+}
+
+.transition-transform button:hover,
+.transition-transform button:focus,
+.transition-transform button:active
+{
+    color: lavenderblush;
+    background: lavenderblush;
+    font-size: 16;
+    padding: 12px 20px;
+    border: 6px dotted indigo;
+    
+}
+
+
+/* Tranform/hover example:*/
+.transition-transform div{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: turquoise;
+    cursor: pointer;
+    transition: 1s ease transform;
+}
+.transition-transform div + div{ /*Find a div beside a div...this is a "directly-followed-by" sibling selector.*/
+    background-color: turquoise;
+    pointer-events: none;/*Disable hover/click/etc for the element. */
+                        /*WARNING: Will affect your JavaScript and all mouse actions!*/
+}
+
+.transition-transform div:hover + div {
+    /*Now were combining our pseudo (state) selector for hover, and telling the FOLLOWING div how to behave!*/
+    transform:
+        translate( 100px, -50px ) /*Move based on X and Y coordinates.*/
+        rotate( 35deg )/*Rotation in degrees*/
+        scale( 2 );/*Resize the element (1=100%, 0=o%; 2=200% etc)*/
+       
+}
 .video-section
 {
    position: relative;
