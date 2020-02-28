@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
 @font-face
 {
     font-family: 'JetBrains Mono';
@@ -272,13 +275,14 @@ code
 
 h1,h2,h4,h5,h6{
     font-size: 50px;
-    font-family: "Great Vibes", Georgia, Serif;
+    font-family: 'Trade Winds', Georgia, Serif;
     padding-top: 16px;
 }
 
 h1{
     text-align: center;
     padding-top: 50px;
+   
 
 }
 
